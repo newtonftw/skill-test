@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flexbox;
+    margin: 0;
+    background-color: #f6f7f6;
+}
+
+header {
+    display: flexbox;
+    background-color: #f6f7f6;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 98%;
+    height: 72px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    opacity: 1;
+}
+
+.logo a img{
+    top: 30px;
+    left: 50px;
+    width: 211px;
+    height: 48px;
+    background-color: transparent url('image/TestLogo.png') 0% 0% no-repeat padding-box ;
+    opacity: 1;
+}
+
+.nav-links {
+    display: inline-block;
+    justify-content: center;
+    padding-top: 23px;
+    padding-left: 455px;
+    width: 663px;
+    height: 63px;
+    opacity: 1;
+}
+
+.nav-links a {
+    color: #072635;
+    text-decoration: none;
+    text-align: left;
+    font: normal normal bold 14px/19px Manrope;
+    padding: 10px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a img {
+    padding-right: 9px;
+    justify-content: center;
+    padding-top: 2px;
+    top: 46px;
+    left: 473px;
+    width: 16px;
+    height: 17px;
+    opacity: 1;
+    size-adjust: 15.51px;
+}
+
+.nav-do img{
+    float: right;
+    padding-left: 200px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+
+
+.nav-right a{
+    float: left;
+    font: normal normal bold 14px/19px Manrope ;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+.nav-right p {
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+}
+
+.setting {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 12px;
+}
+
+.more1 {
+    padding-left: 12px;
+    padding-top: 25px;
+}
+
+.patients {
+    top: 122px;
+    margin-left: 18px;
+    width: 367px;
+    height: 1054px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.patients h1{
+    padding-top: 20px;
+    padding-left: 32px;
+    
+}
+
+.patients img {
+    padding-left: 155px;
+}
+
+.listp ul {
+    list-style-type: none; 
+    padding: 0;
+}
+.listp li {
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+.listp img {
+    padding-left: 20px;
+    margin-right: 10px; 
+    max-width: 100px; 
+}
+.text-content {
+    max-width: 600px; 
+}
+
+.more img {
+    padding-left: 120px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    padding-top: 22px;
+}
+
+.listp p {
+    margin: 5px 0; 
+}
+
