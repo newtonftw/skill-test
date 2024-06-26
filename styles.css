@@ -1,158 +1,370 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flexbox;
+* {
+    box-sizing: border-box;
     margin: 0;
-    background-color: #f6f7f6;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    display: flexbox;
-    background-color: #f6f7f6;
-    padding-top: 18px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 18;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
+body {
     display: flex;
-    padding-top: 18px;
-    padding-left: 18px;
-    padding-right: 18px;
-    width: 98%;
-    height: 72px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    flex-direction: column;
+    height: 100vh;
+    background: #f6f7f8 0% 0% no-repeat padding-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 72px:
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 32px;
+    padding: 10px 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box ;
     border-radius: 70px;
-    opacity: 1;
+    height: 72px;
 }
 
-.logo a img{
-    top: 30px;
-    left: 50px;
-    width: 211px;
-    height: 48px;
-    background-color: transparent url('image/TestLogo.png') 0% 0% no-repeat padding-box ;
-    opacity: 1;
+.logo img {
+ top: 30px;
+ width: 211px;
+ height: 48px;
+ opacity: 1;
 }
 
-.nav-links {
-    display: inline-block;
-    justify-content: center;
-    padding-top: 23px;
-    padding-left: 455px;
-    width: 663px;
-    height: 63px;
-    opacity: 1;
-}
+.nav {
+    display: flex;
+    gap: 15px;
+    }
 
-.nav-links a {
-    color: #072635;
+.nav a {
     text-decoration: none;
+    color: #007bff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 41px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    transition: background-color 0.3s;
     text-align: left;
     font: normal normal bold 14px/19px Manrope;
-    padding: 10px 10px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a img {
-    padding-right: 9px;
-    justify-content: center;
-    padding-top: 2px;
-    top: 46px;
-    left: 473px;
-    width: 16px;
-    height: 17px;
-    opacity: 1;
-    size-adjust: 15.51px;
-}
-
-.nav-do img{
-    float: right;
-    padding-left: 200px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-
-}
-
-
-.nav-right a{
-    float: left;
-    font: normal normal bold 14px/19px Manrope ;
     letter-spacing: 0px;
     color: #072635;
     opacity: 1;
 }
 
-.nav-right p {
-    font: normal normal normal 14px/19px Manrope;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
+nav img{
+    padding-right: 5px;
 }
 
-li {
+.nav a:hover {
+    background-color: #e9ecef;
+}
+
+.highlight {
+    background: #01f0d0 0% 0% no-repeat padding-box;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    overflow-y: auto;
+    top: 122px;
+    left: 18px;
+    width: 367px;
+    margin-left: 18px;
+    border-radius: 16px;
+}
+
+
+
+.patients {
+    margin-bottom: 20px;
+
+}
+
+.patients h2 {
+    margin-bottom: 10px;
+}
+
+.patients ul {
     list-style: none;
 }
 
-.setting {
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-bottom: 12px;
+.patients li {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
-.more1 {
+.patients span {
     padding-left: 12px;
-    padding-top: 25px;
+    font: normal normal bold 14px/19px Manrope;
 }
 
-.patients {
-    top: 122px;
-    margin-left: 18px;
-    width: 367px;
-    height: 1054px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+.patients span p {
+    font: normal normal normal 14px/19px Manrope;
+}
+
+.patients h2 img {
+    padding-left: 160px;
+}
+
+.patients li img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.patients li:hover,
+.patients li.active {
+    background-color: #e9ecef;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.diagnosis-history {
+    width: 766px;
+    height: 673px;
+}
+
+.diagnosis-history,
+.diagnostic-list {
+    margin-bottom: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
 }
 
-.patients h1{
-    padding-top: 20px;
-    padding-left: 32px;
-    
-}
-
-.patients img {
-    padding-left: 155px;
-}
-
-.listp ul {
-    list-style-type: none; 
-    padding: 0;
-}
-.listp li {
-    display: flex; 
-    align-items: flex-start; 
-    margin-bottom: 20px; 
-}
-.listp img {
+.diagnosis-history h2,
+.diagnostic-list h2 {
+    margin-bottom: 10px;
     padding-left: 20px;
-    margin-right: 10px; 
-    max-width: 100px; 
-}
-.text-content {
-    max-width: 600px; 
+    padding-top: 20px;
 }
 
-.more img {
-    padding-left: 120px;
+.diagnostic-list {
+    width: 766px;
+    height: 349px;
+}
+
+.diagnostic-list table  {
+    background: #f6f7f8 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.diagnostic-list table thead tr th{
+    width: 726px;
+    height: 48px;
+    border-radius: 24px;
+    background: #f6f7f8 0% 0% no-repeat padding-box;
+}
+
+.diagnostic-list table tbody tr {
+    width: 723px;
+    height: 59px;
+    margin-top: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.blood-pressure-chart {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
     padding-right: 20px;
-    padding-bottom: 22px;
-    padding-top: 22px;
+    border-radius: 24px;
+    opacity: 1;
 }
 
-.listp p {
-    margin: 5px 0; 
+
+.vital-sign {
+   padding: 0 1600px;
 }
 
+
+.vital1 {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 21px;
+    left: 437px;
+    width: 228px;
+    height: 242px;
+    background: #E0F3FA 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    float: left;
+}
+
+.vital2 {
+    margin-right: 21px;
+    left: 437px;
+    width: 228px;
+    height: 242px;
+    background: #ffe6e9 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    float: left;
+}
+
+.vital3 {
+    left: 437px;
+    width: 228px;
+    height: 242px;
+    background: #ffe6f1 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+    float: left;
+}
+
+.vital1 p {
+    padding-top: 16px;
+    padding-left: 16px;
+    text-align: left;
+    font: normal normal medium 16px/22px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.vital1 h1 {
+    padding-left: 16px;
+    padding-bottom: 18px;
+    text-align: left;
+    font: normal normal 800 30px/41px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+.vital1 span {
+    padding-left: 16px;
+}
+
+.vital1 img{
+    padding-left: 16px;
+    padding-top: 16px;
+     width: 96px;
+     height: 96px;
+     opacity: 1;
+}
+
+
+
+
+.vital2 p {
+    padding-top: 16px;
+    padding-left: 16px;
+    text-align: left;
+    font: normal normal medium 16px/22px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.vital2 h1 {
+    padding-left: 16px;
+    padding-bottom: 18px;
+    text-align: left;
+    font: normal normal 800 30px/41px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+.vital2 span {
+    padding-left: 16px;
+}
+
+.vital2 img{
+    padding-left: 16px;
+    padding-top: 16px;
+     width: 96px;
+     height: 96px;
+     opacity: 1;
+}
+
+.vital3 p {
+    padding-top: 16px;
+    padding-left: 16px;
+    text-align: left;
+    font: normal normal medium 16px/22px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.vital3 h1 {
+    padding-left: 16px;
+    padding-bottom: 18px;
+    text-align: left;
+    font: normal normal 800 30px/41px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+}
+
+.vital3 span {
+    padding-left: 16px;
+}
+
+.vital3 img{
+    padding-left: 16px;
+    padding-top: 16px;
+     width: 96px;
+     height: 96px;
+     opacity: 1;
+}
+
+.patient-info {
+    width: 367px;
+    height: 740px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.patient-info img {
+    padding-left: 83px;
+    padding-top: 32px;
+}
